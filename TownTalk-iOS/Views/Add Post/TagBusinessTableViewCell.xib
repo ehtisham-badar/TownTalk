@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Satoshi-Medium.otf">
+            <string>Satoshi-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TagBusinessTableViewCell" rowHeight="95" id="KGk-i7-Jjw" customClass="TagBusinessTableViewCell" customModule="TownTalk_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Night club" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="407-7V-qCt">
+                        <rect key="frame" x="25" y="0.0" width="341" height="21"/>
+                        <fontDescription key="fontDescription" name="Satoshi-Medium" family="Satoshi" pointSize="18"/>
+                        <color key="textColor" name="LabelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="22 elm street Los Angeles, California" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zO7-tF-tHW">
+                        <rect key="frame" x="25" y="26" width="341" height="21"/>
+                        <fontDescription key="fontDescription" name="Satoshi-Medium" family="Satoshi" pointSize="18"/>
+                        <color key="textColor" name="LabelGreyColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CrV-N1-OZr">
+                        <rect key="frame" x="-1" y="94" width="393" height="1"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="WDs-fE-rnx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="CrV-N1-OZr" secondAttribute="bottom" id="AkK-9J-3kV"/>
+                    <constraint firstItem="CrV-N1-OZr" firstAttribute="top" secondItem="zO7-tF-tHW" secondAttribute="bottom" constant="22" id="CXA-f4-8FW"/>
+                    <constraint firstAttribute="trailing" secondItem="zO7-tF-tHW" secondAttribute="trailing" constant="25" id="NeN-H5-3pG"/>
+                    <constraint firstItem="407-7V-qCt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="OGr-zE-nNg"/>
+                    <constraint firstItem="407-7V-qCt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Y70-3z-wtK"/>
+                    <constraint firstItem="zO7-tF-tHW" firstAttribute="top" secondItem="407-7V-qCt" secondAttribute="bottom" constant="5" id="lOy-uF-KOl"/>
+                    <constraint firstAttribute="trailing" secondItem="407-7V-qCt" secondAttribute="trailing" constant="25" id="mAk-Dr-lgl"/>
+                    <constraint firstItem="zO7-tF-tHW" firstAttribute="leading" secondItem="407-7V-qCt" secondAttribute="leading" id="sYI-89-fi7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblAddress" destination="zO7-tF-tHW" id="xsH-Ec-RZo"/>
+                <outlet property="lblName" destination="407-7V-qCt" id="VVZ-j6-hP7"/>
+            </connections>
+            <point key="canvasLocation" x="109.16030534351144" y="16.549295774647888"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="LabelColor">
+            <color red="0.125" green="0.054999999701976776" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LabelGreyColor">
+            <color red="0.56099998950958252" green="0.52499997615814209" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

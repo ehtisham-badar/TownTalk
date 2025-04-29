@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Satoshi-Medium.otf">
+            <string>Satoshi-Medium</string>
+        </array>
+        <array key="Satoshi-Regular.otf">
+            <string>Satoshi-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SendLocationTableViewCell" rowHeight="312" id="KGk-i7-Jjw" customClass="SendLocationTableViewCell" customModule="TownTalk_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="407" height="312"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="407" height="312"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FgP-X8-RXS">
+                        <rect key="frame" x="100" y="0.0" width="285" height="282"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JdL-Ue-lUb" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="102" width="285" height="180"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="rfC-Gv-I8i"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QPv-Gd-MD1">
+                                <rect key="frame" x="213" y="112" width="62" height="30"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timerIcon" translatesAutoresizingMaskIntoConstraints="NO" id="qMS-ge-JMX">
+                                        <rect key="frame" x="9" y="6" width="18" height="18"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8hrs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HC0-dJ-PqK">
+                                        <rect key="frame" x="29" y="7.6666666666666714" width="24" height="15"/>
+                                        <fontDescription key="fontDescription" name="Satoshi-Regular" family="Satoshi" pointSize="12"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="HC0-dJ-PqK" firstAttribute="centerY" secondItem="qMS-ge-JMX" secondAttribute="centerY" id="Ck5-N4-14Q"/>
+                                    <constraint firstAttribute="height" constant="30" id="JwA-Zw-jwh"/>
+                                    <constraint firstItem="HC0-dJ-PqK" firstAttribute="leading" secondItem="qMS-ge-JMX" secondAttribute="trailing" constant="2" id="QxW-bm-k17"/>
+                                    <constraint firstItem="qMS-ge-JMX" firstAttribute="centerY" secondItem="QPv-Gd-MD1" secondAttribute="centerY" id="VwR-lG-yNO"/>
+                                    <constraint firstAttribute="width" constant="62" id="dSz-a5-7Bd"/>
+                                    <constraint firstItem="qMS-ge-JMX" firstAttribute="leading" secondItem="QPv-Gd-MD1" secondAttribute="leading" constant="9" id="eeM-Jx-FWC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNs-vT-TNl">
+                                <rect key="frame" x="17" y="15" width="251" height="72"/>
+                                <string key="text">Nightclub 123, 22 Will st, 
+Los Angeles, CA</string>
+                                <fontDescription key="fontDescription" name="Satoshi-Medium" family="Satoshi" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="ViewColor"/>
+                        <constraints>
+                            <constraint firstItem="QPv-Gd-MD1" firstAttribute="top" secondItem="JdL-Ue-lUb" secondAttribute="top" constant="10" id="1r5-Lq-ktE"/>
+                            <constraint firstItem="QPv-Gd-MD1" firstAttribute="trailing" secondItem="JdL-Ue-lUb" secondAttribute="trailing" constant="-10" id="5F9-bS-1CO"/>
+                            <constraint firstAttribute="bottom" secondItem="JdL-Ue-lUb" secondAttribute="bottom" id="6jO-Sa-DuX"/>
+                            <constraint firstItem="JdL-Ue-lUb" firstAttribute="leading" secondItem="FgP-X8-RXS" secondAttribute="leading" id="8ZL-m0-2Zq"/>
+                            <constraint firstAttribute="trailing" secondItem="JdL-Ue-lUb" secondAttribute="trailing" id="Jq5-kb-zfe"/>
+                            <constraint firstItem="CNs-vT-TNl" firstAttribute="top" secondItem="FgP-X8-RXS" secondAttribute="top" constant="15" id="OBG-iR-EJV"/>
+                            <constraint firstItem="JdL-Ue-lUb" firstAttribute="top" secondItem="CNs-vT-TNl" secondAttribute="bottom" constant="15" id="OdJ-Yo-pWZ"/>
+                            <constraint firstAttribute="trailing" secondItem="CNs-vT-TNl" secondAttribute="trailing" constant="17" id="Rlm-7q-yBe"/>
+                            <constraint firstItem="CNs-vT-TNl" firstAttribute="leading" secondItem="FgP-X8-RXS" secondAttribute="leading" constant="17" id="tyY-LE-Y0D"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sent at 6:08 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9Q-G2-b4k">
+                        <rect key="frame" x="110" y="284" width="94" height="16.333333333333314"/>
+                        <fontDescription key="fontDescription" name="Satoshi-Regular" family="Satoshi" pointSize="13"/>
+                        <color key="textColor" name="LabelGreyColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dFS-zo-NhY">
+                        <rect key="frame" x="328" y="262" width="50" height="30"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KLa-uh-ELu">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="BlackWhiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KLa-uh-ELu" secondAttribute="trailing" constant="10" id="7ag-rV-W18"/>
+                            <constraint firstItem="KLa-uh-ELu" firstAttribute="leading" secondItem="dFS-zo-NhY" secondAttribute="leading" constant="10" id="C2t-AT-l4q"/>
+                            <constraint firstAttribute="bottom" secondItem="KLa-uh-ELu" secondAttribute="bottom" id="KoI-bJ-mXi"/>
+                            <constraint firstAttribute="height" constant="30" id="Wim-9g-VkH"/>
+                            <constraint firstItem="KLa-uh-ELu" firstAttribute="top" secondItem="dFS-zo-NhY" secondAttribute="top" id="Zd9-ik-85D"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="pEE-bp-Yqq"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="LabelGreyColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="FgP-X8-RXS" secondAttribute="bottom" constant="30" id="BWQ-VE-QTR"/>
+                    <constraint firstItem="v9Q-G2-b4k" firstAttribute="leading" secondItem="FgP-X8-RXS" secondAttribute="leading" constant="10" id="Fi7-Xt-BhV"/>
+                    <constraint firstItem="dFS-zo-NhY" firstAttribute="bottom" secondItem="FgP-X8-RXS" secondAttribute="bottom" constant="10" id="TVY-ta-v64"/>
+                    <constraint firstItem="v9Q-G2-b4k" firstAttribute="top" secondItem="FgP-X8-RXS" secondAttribute="bottom" constant="2" id="aEy-67-mXL"/>
+                    <constraint firstItem="FgP-X8-RXS" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.7" id="cHt-oV-FW4"/>
+                    <constraint firstItem="dFS-zo-NhY" firstAttribute="trailing" secondItem="FgP-X8-RXS" secondAttribute="trailing" constant="-10" id="fkF-sd-bE9"/>
+                    <constraint firstAttribute="trailing" secondItem="FgP-X8-RXS" secondAttribute="trailing" constant="22" id="iGQ-yH-i6I"/>
+                    <constraint firstItem="FgP-X8-RXS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="sDP-N0-Noe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblLocation" destination="CNs-vT-TNl" id="I41-lU-jrg"/>
+                <outlet property="lblLocationTime" destination="HC0-dJ-PqK" id="1nj-Re-dcY"/>
+                <outlet property="lblTime" destination="v9Q-G2-b4k" id="IKk-Dn-fat"/>
+                <outlet property="mapVire" destination="JdL-Ue-lUb" id="uBm-kx-Kuj"/>
+                <outlet property="reactionView" destination="dFS-zo-NhY" id="by8-3U-Ftc"/>
+                <outlet property="stackView" destination="KLa-uh-ELu" id="fd4-8V-KP0"/>
+                <outlet property="timeView" destination="QPv-Gd-MD1" id="Prn-5j-FIk"/>
+            </connections>
+            <point key="canvasLocation" x="205.34351145038167" y="92.957746478873247"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="timerIcon" width="18" height="18"/>
+        <namedColor name="BlackWhiteColor">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LabelGreyColor">
+            <color red="0.56099998950958252" green="0.52499997615814209" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ViewColor">
+            <color red="0.125" green="0.054999999701976776" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

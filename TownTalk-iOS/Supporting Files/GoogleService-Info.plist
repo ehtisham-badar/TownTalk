@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>680840569873-fn6d0ptddjnj3blpgpqknc1v97j4m0dm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.680840569873-fn6d0ptddjnj3blpgpqknc1v97j4m0dm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAXZUBHGjtEApQSX0CAciskd5K0XTDF4Uo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>680840569873</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.towntalk.app</string>
+	<key>PROJECT_ID</key>
+	<string>town-talk-9f25a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>town-talk-9f25a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:680840569873:ios:494b44fdb14f6dd0cdbdb0</string>
+	<key>DATABASE_URL</key>
+	<string>https://town-talk-9f25a-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

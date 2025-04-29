@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NdW-Oc-afS">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Satoshi-Bold.otf">
+            <string>Satoshi-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Launch Screen View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LaunchScreenViewController" id="Y6W-OH-hqX" customClass="LaunchScreenViewController" customModule="TownTalk_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="emK-vu-azv">
+                                <rect key="frame" x="46.666666666666657" y="197" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="DzL-WC-aGN"/>
+                                    <constraint firstAttribute="width" constant="300" id="yXa-Kp-o3b"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMMUNITY AND DISCOVERY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJL-Qg-pQA">
+                                <rect key="frame" x="34" y="517.66666666666663" width="325.33333333333331" height="27.666666666666629"/>
+                                <fontDescription key="fontDescription" name="Satoshi-Bold" family="Satoshi" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="7yK-qs-V8b">
+                                <rect key="frame" x="118" y="555.33333333333337" width="157" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAm-Rh-1cz">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="e7W-9D-OSY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Satoshi-Bold" family="Satoshi" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKG-AV-dhP">
+                                        <rect key="frame" x="28" y="0.0" width="30" height="30"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe" translatesAutoresizingMaskIntoConstraints="NO" id="h2m-ED-bWF">
+                                                <rect key="frame" x="4" y="4" width="22" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="22" id="9NL-nh-3iF"/>
+                                                    <constraint firstAttribute="width" constant="22" id="a79-bH-JrW"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="Hev-cb-tnd"/>
+                                            <constraint firstAttribute="height" constant="30" id="OKv-9K-DRl"/>
+                                            <constraint firstItem="h2m-ED-bWF" firstAttribute="centerX" secondItem="mKG-AV-dhP" secondAttribute="centerX" id="kpT-MC-kar"/>
+                                            <constraint firstItem="h2m-ED-bWF" firstAttribute="centerY" secondItem="mKG-AV-dhP" secondAttribute="centerY" id="rtf-N3-gO9"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RLDWIDE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0d-5F-Yzv">
+                                        <rect key="frame" x="56" y="0.0" width="101" height="30"/>
+                                        <fontDescription key="fontDescription" name="Satoshi-Bold" family="Satoshi" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Vhj-5L-MPT"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.081398628649999999" green="0.48227882389999999" blue="0.93108624220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="7yK-qs-V8b" secondAttribute="bottom" constant="232.66999999999999" id="9Bd-1s-Xq2"/>
+                            <constraint firstItem="WJL-Qg-pQA" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="E8g-Rn-Dji"/>
+                            <constraint firstItem="7yK-qs-V8b" firstAttribute="centerX" secondItem="WJL-Qg-pQA" secondAttribute="centerX" id="Nml-5y-A82"/>
+                            <constraint firstItem="emK-vu-azv" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="qHE-Ra-m8j"/>
+                            <constraint firstItem="emK-vu-azv" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="138" id="tpD-Jx-aM9"/>
+                            <constraint firstItem="7yK-qs-V8b" firstAttribute="top" secondItem="WJL-Qg-pQA" secondAttribute="bottom" constant="10.000000000000114" id="uDC-7E-h9X"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rEn-P6-joQ"/>
+                    <connections>
+                        <segue destination="PCJ-zU-W7o" kind="show" identifier="MainNavigationViewController" id="ovL-r0-Pc3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035.8778625954199" y="-2.1126760563380285"/>
+        </scene>
+        <!--MainNavigationViewController-->
+        <scene sceneID="oDf-hc-oT1">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MainNavigationViewController" storyboardName="Auth" referencedIdentifier="MainNavigationViewController" id="PCJ-zU-W7o" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XhT-U2-xG1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o6W-pf-fyb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835.1145038167938" y="-191.5492957746479"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0KY-8p-fAS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="NdW-Oc-afS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bLu-8r-1nQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="ckx-4L-29b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Wz-a3-Z5y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109.16030534351144" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="globe" width="305.33334350585938" height="307.33334350585938"/>
+        <image name="launchLogo" width="341.33334350585938" height="341.33334350585938"/>
+    </resources>
+</document>

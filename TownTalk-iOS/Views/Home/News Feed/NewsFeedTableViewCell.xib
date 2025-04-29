@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Satoshi-Regular.otf">
+            <string>Satoshi-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsFeedTableViewCell" rowHeight="68" id="KGk-i7-Jjw" customClass="NewsFeedTableViewCell" customModule="TownTalk_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="465" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="465" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All News Feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbl-Ww-cr6">
+                        <rect key="frame" x="25.000000000000007" y="21.666666666666671" width="123.66666666666669" height="25"/>
+                        <fontDescription key="fontDescription" name="Satoshi-Regular" family="Satoshi" pointSize="20"/>
+                        <color key="textColor" name="LabelGreyColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MK-k2-Fhg">
+                        <rect key="frame" x="416" y="22" width="24" height="24"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="moreIcon"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tw-ni-fUW">
+                        <rect key="frame" x="385" y="18.666666666666671" width="31" height="31"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="addFeedIcon"/>
+                        <connections>
+                            <action selector="addUserPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cRd-ut-Hql"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lrl-3E-fQW">
+                        <rect key="frame" x="0.0" y="67" width="465" height="1"/>
+                        <color key="backgroundColor" name="LabelGreyColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="5ju-4Z-6Lj"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9G-mF-VMD">
+                        <rect key="frame" x="416" y="0.0" width="49" height="67"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="morePressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sag-wV-jmn"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" name="ViewColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="3MK-k2-Fhg" secondAttribute="trailing" constant="25" id="1e8-ei-zvd"/>
+                    <constraint firstItem="pbl-Ww-cr6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="6nc-wt-BWW"/>
+                    <constraint firstItem="lrl-3E-fQW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AsF-J1-avE"/>
+                    <constraint firstAttribute="bottom" secondItem="lrl-3E-fQW" secondAttribute="bottom" id="Axx-JZ-bvR"/>
+                    <constraint firstItem="lrl-3E-fQW" firstAttribute="top" secondItem="U9G-mF-VMD" secondAttribute="bottom" id="D3o-gS-30X"/>
+                    <constraint firstItem="pbl-Ww-cr6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="FlS-PE-Jsb"/>
+                    <constraint firstItem="0tw-ni-fUW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GWl-eE-9gb"/>
+                    <constraint firstAttribute="trailing" secondItem="U9G-mF-VMD" secondAttribute="trailing" id="JGR-C8-Xgv"/>
+                    <constraint firstItem="3MK-k2-Fhg" firstAttribute="leading" secondItem="0tw-ni-fUW" secondAttribute="trailing" id="Mg5-tB-Mav"/>
+                    <constraint firstItem="3MK-k2-Fhg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bx8-yw-rtH"/>
+                    <constraint firstItem="U9G-mF-VMD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="mKx-G8-Pxr"/>
+                    <constraint firstItem="U9G-mF-VMD" firstAttribute="leading" secondItem="3MK-k2-Fhg" secondAttribute="leading" id="miP-Kh-4Gk"/>
+                    <constraint firstAttribute="trailing" secondItem="lrl-3E-fQW" secondAttribute="trailing" id="opZ-FP-a2p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addUserBtn" destination="0tw-ni-fUW" id="579-78-2q1"/>
+                <outlet property="lblTitle" destination="pbl-Ww-cr6" id="tP0-Mj-7Ip"/>
+                <outlet property="moreBtn" destination="3MK-k2-Fhg" id="c8D-2n-9YN"/>
+            </connections>
+            <point key="canvasLocation" x="130.53435114503816" y="7.042253521126761"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="addFeedIcon" width="31" height="31"/>
+        <image name="moreIcon" width="24" height="24"/>
+        <namedColor name="LabelGreyColor">
+            <color red="0.56099998950958252" green="0.52499997615814209" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ViewColor">
+            <color red="0.125" green="0.054999999701976776" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

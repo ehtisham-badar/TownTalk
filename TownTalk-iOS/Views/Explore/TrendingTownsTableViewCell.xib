@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Satoshi-Medium.otf">
+            <string>Satoshi-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrendingTownsTableViewCell" rowHeight="81" id="KGk-i7-Jjw" customClass="TrendingTownsTableViewCell" customModule="TownTalk_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Middlesex County" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSB-IH-dP4">
+                        <rect key="frame" x="25" y="15.000000000000002" width="300" height="22.666666666666671"/>
+                        <fontDescription key="fontDescription" name="Satoshi-Medium" family="Satoshi" pointSize="18"/>
+                        <color key="textColor" name="LabelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2,334 Check ins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjG-Yv-l7R">
+                        <rect key="frame" x="25" y="43.666666666666664" width="132" height="22.999999999999993"/>
+                        <fontDescription key="fontDescription" name="Satoshi-Medium" family="Satoshi" pointSize="18"/>
+                        <color key="textColor" name="LabelGreyColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dnv-W0-SIE">
+                        <rect key="frame" x="0.0" y="80" width="350" height="1"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="4An-cK-v2t"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sSB-IH-dP4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="3ZR-El-wEA"/>
+                    <constraint firstItem="dnv-W0-SIE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7fr-h0-Eo4"/>
+                    <constraint firstAttribute="bottom" secondItem="dnv-W0-SIE" secondAttribute="bottom" id="S1G-Mx-PrK"/>
+                    <constraint firstItem="zjG-Yv-l7R" firstAttribute="top" secondItem="sSB-IH-dP4" secondAttribute="bottom" constant="6" id="Vco-KC-ZRm"/>
+                    <constraint firstAttribute="trailing" secondItem="sSB-IH-dP4" secondAttribute="trailing" constant="25" id="W0c-rB-MCr"/>
+                    <constraint firstItem="sSB-IH-dP4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="egD-TG-MFt"/>
+                    <constraint firstItem="zjG-Yv-l7R" firstAttribute="leading" secondItem="sSB-IH-dP4" secondAttribute="leading" id="fkG-fW-LGo"/>
+                    <constraint firstAttribute="trailing" secondItem="dnv-W0-SIE" secondAttribute="trailing" id="fmf-ue-3Lh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblCheckIns" destination="zjG-Yv-l7R" id="q5a-n3-0ZS"/>
+                <outlet property="lblLocation" destination="sSB-IH-dP4" id="CXS-Do-tGu"/>
+            </connections>
+            <point key="canvasLocation" x="149.61832061068702" y="11.619718309859156"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="LabelColor">
+            <color red="0.125" green="0.054999999701976776" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LabelGreyColor">
+            <color red="0.56099998950958252" green="0.52499997615814209" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
